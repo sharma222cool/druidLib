@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.appbundlesample.article" >
+    <application>
+        <activity android:name=".ArticleActivity"/>
+    </application>
+</manifest>

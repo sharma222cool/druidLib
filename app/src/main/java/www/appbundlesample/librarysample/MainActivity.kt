@@ -1,8 +1,10 @@
 package www.appbundlesample.librarysample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import www.appbundlesample.article.ArticleActivity
 import www.appbundlesample.core.LibFile
 
 class MainActivity : AppCompatActivity() {
@@ -13,5 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val libFile = LibFile()
         libFile.display(this)
+
+        val intent = Intent(this, ArticleActivity::class.java)
+        startActivity(intent)
     }
 }
