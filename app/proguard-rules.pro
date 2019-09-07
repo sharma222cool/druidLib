@@ -19,3 +19,6 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-printseeds obfuscation/app/seeds.txt
+-printmapping obfuscation/app/mapping.txt
+-printusage obfuscation/app/unused.txt

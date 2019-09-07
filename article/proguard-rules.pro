@@ -8,17 +8,14 @@
 # Specify the input jars, output jars, and library jars.
 # In this case, the input jar is the program library that we want to process.
 
--injars  in.jar
--outjars out.jar
-
--libraryjars  <java.home>/lib/rt.jar
-
 # Save the obfuscation mapping to a file, so we can de-obfuscate any stack
 # traces later on. Keep a fixed source file attribute and all line number
 # tables to get line numbers in the stack traces.
 # You can comment this out if you're not interested in stack traces.
 
--printmapping out.map
+-printseeds obfuscation/library/seeds.txt
+-printmapping obfuscation/library/mapping.txt
+-printusage obfuscation/library/unused.txt
 -keepparameternames
 -renamesourcefileattribute SourceFile
 -keepattributes Exceptions,InnerClasses,Signature,Deprecated,
