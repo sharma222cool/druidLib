@@ -13,6 +13,8 @@ class ArticleActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Toast.makeText(this, "Article activity $myString ${BuildConfig.BUILD_TYPE}", Toast.LENGTH_LONG).show()
+
+        val myData = MyData("Mohit Sharma")
+        Toast.makeText(this, "Article activity $myString ${myData.name}", Toast.LENGTH_LONG).show()
     }
 }
