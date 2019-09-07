@@ -9,8 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
  */
 class ArticleActivity : AppCompatActivity() {
 
+    val myString = "My String variable"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Toast.makeText(this, "Article activity", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "Article activity $myString", Toast.LENGTH_LONG).show()
     }
 }
