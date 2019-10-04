@@ -3,6 +3,7 @@ package www.appbundlesample.librarysample
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import www.appbundlesample.article.ArticleActivity
 import www.appbundlesample.core.LibFile

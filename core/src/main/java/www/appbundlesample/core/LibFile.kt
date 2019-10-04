@@ -9,7 +9,7 @@ import android.widget.Toast
  */
 class LibFile {
     fun display(context: Context) {
-        Log.d("okhttp", "Library ${BuildConfig.BUILD_TYPE}")
+        Log.d("okhttp", "Jitpack Library ${BuildConfig.BUILD_TYPE}")
 
         Toast.makeText(context, R.string.core_app_name, Toast.LENGTH_LONG).show()
     }
