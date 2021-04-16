@@ -19,5 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         val intent = Intent(this, ArticleActivity::class.java)
         startActivity(intent)
+
+        println("Creating Dev Branch")
     }
 }
